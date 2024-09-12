@@ -41,7 +41,7 @@ VALUES
 -- Einfügen von Werten in die Tabelle cc.delivered_parcels
 INSERT INTO cc.delivered_parcels (barcode, from_name, from_address, from_postal, from_city, to_name, to_address, to_postal, to_city)
 VALUES
-(1001, 'Max Mustermann', 'Musterstraße 1', 12345, 'Musterstadt', 'Erika Musterfrau', 'Beispielweg 2', 54321, 'Beispielstadt'),
+(1001, 'Max Mustermann', 'Musterstrasse 1', 12345, 'Musterstadt', 'Erika Musterfrau', 'Beispielweg 2', 54321, 'Beispielstadt'),
 (1002, 'John Doe', 'Baker Street 221B', 10001, 'London', 'Sherlock Holmes', 'Baker Street 221B', 10001, 'London'),
 (1003, 'Alice Smith', 'Queen Road 5', 75001, 'Paris', 'Bob Brown', 'Rue de Rivoli 10', 75001, 'Paris');
 
