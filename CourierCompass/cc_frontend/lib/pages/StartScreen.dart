@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:cc_frontend/pages/sildeScreens/SlideScreens.dart';
+import 'package:cc_frontend/pages/slideScreens/SlideScreens.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -20,7 +20,7 @@ class _StartScreenState extends State<StartScreen> {
       Navigator.pushReplacement(
         context,
         PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => const SlideScreens(),
+          pageBuilder: (context, animation, secondaryAnimation) => const FirstStartPage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(1.0, 0.0);
             const end = Offset.zero;
