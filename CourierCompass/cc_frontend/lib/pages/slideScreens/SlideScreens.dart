@@ -54,7 +54,7 @@ class FirstStartPage extends StatelessWidget {
                   height: 56,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Second Page
+                      // SecondPage();
                     },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
