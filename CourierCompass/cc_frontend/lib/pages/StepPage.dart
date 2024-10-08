@@ -59,7 +59,6 @@ class _StepPageViewState extends State<StepPageView> {
                     curve: Curves.easeInOut,
                   );
                 } else {
-                  // Do something when "Get Started" is pressed
                   print('Get Started pressed');
                 }
               },
