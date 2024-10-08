@@ -1,4 +1,4 @@
-package com.couriercompass.cc_backend.parcel_to_deliver;
+package com.spring.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

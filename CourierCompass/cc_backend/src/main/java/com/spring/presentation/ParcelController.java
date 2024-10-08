@@ -1,5 +1,7 @@
-package com.couriercompass.cc_backend.parcel_to_deliver;
+package com.spring.presentation;
 
+import com.spring.domain.Parcel;
+import com.spring.service.ParcelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

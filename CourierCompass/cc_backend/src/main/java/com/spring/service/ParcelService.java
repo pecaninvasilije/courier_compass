@@ -1,7 +1,9 @@
-package com.couriercompass.cc_backend.parcel_to_deliver;
+package com.spring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.spring.domain.Parcel;
+import com.spring.persistence.ParcelRepository;
 
 import java.util.List;
 
