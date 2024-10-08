@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParcelRepository extends JpaRepository<Parcel, Integer> {
+    Parcel findByBarcode(int barcode);
 }

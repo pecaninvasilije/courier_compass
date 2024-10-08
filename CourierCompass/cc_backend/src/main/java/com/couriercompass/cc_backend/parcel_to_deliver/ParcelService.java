@@ -14,4 +14,8 @@ public class ParcelService {
     public List<Parcel> getAllParcels() {
         return parcelRepository.findAll();
     }
+
+    public Parcel getParcelByBarcode(int barcode) {
+        return parcelRepository.findByBarcode(barcode);
+    }
 }
