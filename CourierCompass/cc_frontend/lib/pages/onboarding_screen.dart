@@ -1,3 +1,6 @@
+import 'package:cc_frontend/pages/intro_screens/intro_page_1.dart';
+import 'package:cc_frontend/pages/intro_screens/intro_page_2.dart';
+import 'package:cc_frontend/pages/intro_screens/intro_page_3.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -23,6 +26,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     });
   }
 
+  void _onButtonPressed() {
+    if (_currentPage < 2) {
+      _controller.nextPage(
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );
+    } else {
+      // Handle the "Get Started" action here
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,16 +44,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         children: [
           PageView(
             controller: _controller,
-            children: [
-              Container(
-                color: const Color(0xFF141924),
-              ),
-              Container(
-                color: const Color(0xFF141924),
-              ),
-              Container(
-                color: const Color(0xFF141924),
-              ),
+            children: const [
+              IntroPage1(),
+              IntroPage2(),
+              IntroPage3()
             ],
           ),
           Container(
@@ -71,9 +79,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 width: 335,
                 height: 56,
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Add your onPressed code here!
-                  },
+                  onPressed: _onButtonPressed,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFD7E0EE),
                     shape: RoundedRectangleBorder(
