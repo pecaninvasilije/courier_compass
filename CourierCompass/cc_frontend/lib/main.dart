@@ -1,4 +1,4 @@
-import 'package:cc_frontend/pages/StepPage.dart';
+import 'package:cc_frontend/pages/StartScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-     home: StepPageView(),
+      home: StartScreen(),
     );
   }
 }
