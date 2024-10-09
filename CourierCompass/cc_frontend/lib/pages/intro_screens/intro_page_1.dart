@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class IntroPage1 extends StatelessWidget {
@@ -15,25 +16,31 @@ class IntroPage1 extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 70), // Adjust the height as needed
-                Text(
-                  "Ship The Parcels",
-                  style: TextStyle(
-                    color: const Color(0xFFEFF1F4),
-                    fontSize: 24,
-                    fontFamily: GoogleFonts.inter().fontFamily,
-                    fontWeight: FontWeight.bold,
+                SvgPicture.asset('assets/svg/truck.svg'),
+                const SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 30.0),
+                  child: Text(
+                    "Ship The Parcels",
+                    style: TextStyle(
+                      color: const Color(0xFFEFF1F4),
+                      fontSize: 24,
+                      fontFamily: GoogleFonts.inter().fontFamily,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-                const SizedBox(height: 20),
-                Text(
-                  "Experience smooth and completely stress-free parcel delivering with CourierCompass",
-                  style: TextStyle(
-                    color: const Color(0xFF8A9199),
-                    fontSize: 16,
-                    fontFamily: GoogleFonts.inter().fontFamily,
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 30.0),
+                  child: Text(
+                    "Experience smooth and completely stress-free parcel delivering with CourierCompass",
+                    style: TextStyle(
+                      color: const Color(0xFF8A9199),
+                      fontSize: 16,
+                      fontFamily: GoogleFonts.inter().fontFamily,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),

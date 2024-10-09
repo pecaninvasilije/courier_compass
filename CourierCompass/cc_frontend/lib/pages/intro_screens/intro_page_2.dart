@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class IntroPage2 extends StatelessWidget {
@@ -15,7 +16,8 @@ class IntroPage2 extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 70), // Adjust the height as needed
+                SvgPicture.asset('assets/svg/ship.svg'),
+                const SizedBox(height: 10), // Adjust the height as needed
                 Text(
                   "Ship international",
                   style: TextStyle(

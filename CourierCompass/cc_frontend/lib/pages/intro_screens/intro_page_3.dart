@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class IntroPage3 extends StatelessWidget {
@@ -15,7 +16,8 @@ class IntroPage3 extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 70),
+                SvgPicture.asset('assets/svg/navi.svg'),
+                const SizedBox(height: 10),
                 Text(
                   "Confident navigation",
                   style: TextStyle(
