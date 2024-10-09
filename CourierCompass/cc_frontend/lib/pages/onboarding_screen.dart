@@ -32,9 +32,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
-    } else {
-      // Handle the "Get Started" action here
     }
+  }
+
+  void _onSkipPressed() {
+    _controller.jumpToPage(2);
   }
 
   @override
@@ -44,11 +46,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         children: [
           PageView(
             controller: _controller,
-            children: const [
-              IntroPage1(),
-              IntroPage2(),
-              IntroPage3()
-            ],
+            children: const [IntroPage1(), IntroPage2(), IntroPage3()],
           ),
           Container(
             alignment: const Alignment(0, 0.9),
@@ -95,6 +93,20 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 40,
+            right: 20,
+            child: TextButton(
+              onPressed: _onSkipPressed,
+              child: const Text(
+                'Skip',
+                style: TextStyle(
+                  color: Color(0xFFEFF1F4),
+                  fontSize: 16,
                 ),
               ),
             ),
